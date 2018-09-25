@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		151E455620939A1400B5AA30 /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151E455520939A1400B5AA30 /* Coordinate.swift */; };
+		151E455820939B2D00B5AA30 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151E455720939B2D00B5AA30 /* Location.swift */; };
+		151E455A20939DD000B5AA30 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151E455920939DD000B5AA30 /* Venue.swift */; };
+		151E455C2093BC1000B5AA30 /* FoursquareEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151E455B2093BC1000B5AA30 /* FoursquareEndpoint.swift */; };
+		151E455E2093D83900B5AA30 /* FoursquareClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151E455D2093D83900B5AA30 /* FoursquareClient.swift */; };
+		151E45602093D93A00B5AA30 /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151E455F2093D93A00B5AA30 /* APIResult.swift */; };
+		151E45632093F52300B5AA30 /* VenuesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151E45622093F52300B5AA30 /* VenuesTableViewController.swift */; };
+		151E456620979B4F00B5AA30 /* VenueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151E456520979B4F00B5AA30 /* VenueTableViewCell.swift */; };
+		151E45682097D03B00B5AA30 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151E45672097D03B00B5AA30 /* LocationManager.swift */; };
+		151E456B2098295300B5AA30 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 151E456A2098295300B5AA30 /* MapKit.framework */; };
+		152741B92092DFEC000FBA58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152741B82092DFEC000FBA58 /* AppDelegate.swift */; };
+		152741BB2092DFEC000FBA58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152741BA2092DFEC000FBA58 /* ViewController.swift */; };
+		152741BE2092DFEC000FBA58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 152741BC2092DFEC000FBA58 /* Main.storyboard */; };
+		152741C02092DFEC000FBA58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 152741BF2092DFEC000FBA58 /* Assets.xcassets */; };
+		152741C32092DFEC000FBA58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 152741C12092DFEC000FBA58 /* LaunchScreen.storyboard */; };
+		152741CE2092EBBB000FBA58 /* NetworkProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152741CD2092EBBB000FBA58 /* NetworkProcessing.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		151E455520939A1400B5AA30 /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		151E455720939B2D00B5AA30 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		151E455920939DD000B5AA30 /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		151E455B2093BC1000B5AA30 /* FoursquareEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareEndpoint.swift; sourceTree = "<group>"; };
+		151E455D2093D83900B5AA30 /* FoursquareClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareClient.swift; sourceTree = "<group>"; };
+		151E455F2093D93A00B5AA30 /* APIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
+		151E45622093F52300B5AA30 /* VenuesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesTableViewController.swift; sourceTree = "<group>"; };
+		151E456520979B4F00B5AA30 /* VenueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueTableViewCell.swift; sourceTree = "<group>"; };
+		151E45672097D03B00B5AA30 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		151E456A2098295300B5AA30 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		152741B52092DFEC000FBA58 /* VenuesExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VenuesExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		152741B82092DFEC000FBA58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		152741BA2092DFEC000FBA58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		152741BD2092DFEC000FBA58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		152741BF2092DFEC000FBA58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		152741C22092DFEC000FBA58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		152741C42092DFEC000FBA58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		152741CD2092EBBB000FBA58 /* NetworkProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProcessing.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		152741B22092DFEC000FBA58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				151E456B2098295300B5AA30 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		151E45612093F1F700B5AA30 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				152741BA2092DFEC000FBA58 /* ViewController.swift */,
+				151E45622093F52300B5AA30 /* VenuesTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		151E456420979B2500B5AA30 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				152741BC2092DFEC000FBA58 /* Main.storyboard */,
+				151E456520979B4F00B5AA30 /* VenueTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		151E45692098295300B5AA30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				151E456A2098295300B5AA30 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		152741AC2092DFEC000FBA58 = {
+			isa = PBXGroup;
+			children = (
+				152741B72092DFEC000FBA58 /* VenuesExplorer */,
+				152741B62092DFEC000FBA58 /* Products */,
+				151E45692098295300B5AA30 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		152741B62092DFEC000FBA58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				152741B52092DFEC000FBA58 /* VenuesExplorer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		152741B72092DFEC000FBA58 /* VenuesExplorer */ = {
+			isa = PBXGroup;
+			children = (
+				152741B82092DFEC000FBA58 /* AppDelegate.swift */,
+				151E45612093F1F700B5AA30 /* Controller */,
+				152741CA2092E010000FBA58 /* Model */,
+				151E456420979B2500B5AA30 /* View */,
+				152741BF2092DFEC000FBA58 /* Assets.xcassets */,
+				152741C12092DFEC000FBA58 /* LaunchScreen.storyboard */,
+				152741C42092DFEC000FBA58 /* Info.plist */,
+			);
+			path = VenuesExplorer;
+			sourceTree = "<group>";
+		};
+		152741CA2092E010000FBA58 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				152741CD2092EBBB000FBA58 /* NetworkProcessing.swift */,
+				151E455520939A1400B5AA30 /* Coordinate.swift */,
+				151E455720939B2D00B5AA30 /* Location.swift */,
+				151E455D2093D83900B5AA30 /* FoursquareClient.swift */,
+				151E455F2093D93A00B5AA30 /* APIResult.swift */,
+				151E45672097D03B00B5AA30 /* LocationManager.swift */,
+				151E455B2093BC1000B5AA30 /* FoursquareEndpoint.swift */,
+				151E455920939DD000B5AA30 /* Venue.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		152741B42092DFEC000FBA58 /* VenuesExplorer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 152741C72092DFEC000FBA58 /* Build configuration list for PBXNativeTarget "VenuesExplorer" */;
+			buildPhases = (
+				152741B12092DFEC000FBA58 /* Sources */,
+				152741B22092DFEC000FBA58 /* Frameworks */,
+				152741B32092DFEC000FBA58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VenuesExplorer;
+			productName = VenuesExplorer;
+			productReference = 152741B52092DFEC000FBA58 /* VenuesExplorer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		152741AD2092DFEC000FBA58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Duy Pham";
+				TargetAttributes = {
+					152741B42092DFEC000FBA58 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 152741B02092DFEC000FBA58 /* Build configuration list for PBXProject "VenuesExplorer" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 152741AC2092DFEC000FBA58;
+			productRefGroup = 152741B62092DFEC000FBA58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				152741B42092DFEC000FBA58 /* VenuesExplorer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		152741B32092DFEC000FBA58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				152741C32092DFEC000FBA58 /* LaunchScreen.storyboard in Resources */,
+				152741C02092DFEC000FBA58 /* Assets.xcassets in Resources */,
+				152741BE2092DFEC000FBA58 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		152741B12092DFEC000FBA58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				151E45602093D93A00B5AA30 /* APIResult.swift in Sources */,
+				152741BB2092DFEC000FBA58 /* ViewController.swift in Sources */,
+				151E455C2093BC1000B5AA30 /* FoursquareEndpoint.swift in Sources */,
+				151E456620979B4F00B5AA30 /* VenueTableViewCell.swift in Sources */,
+				151E45632093F52300B5AA30 /* VenuesTableViewController.swift in Sources */,
+				151E455A20939DD000B5AA30 /* Venue.swift in Sources */,
+				152741B92092DFEC000FBA58 /* AppDelegate.swift in Sources */,
+				151E455820939B2D00B5AA30 /* Location.swift in Sources */,
+				151E45682097D03B00B5AA30 /* LocationManager.swift in Sources */,
+				151E455E2093D83900B5AA30 /* FoursquareClient.swift in Sources */,
+				152741CE2092EBBB000FBA58 /* NetworkProcessing.swift in Sources */,
+				151E455620939A1400B5AA30 /* Coordinate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		152741BC2092DFEC000FBA58 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				152741BD2092DFEC000FBA58 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		152741C12092DFEC000FBA58 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				152741C22092DFEC000FBA58 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		152741C52092DFEC000FBA58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		152741C62092DFEC000FBA58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		152741C82092DFEC000FBA58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VenuesExplorer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.VenuesExplorer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		152741C92092DFEC000FBA58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VenuesExplorer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.VenuesExplorer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		152741B02092DFEC000FBA58 /* Build configuration list for PBXProject "VenuesExplorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				152741C52092DFEC000FBA58 /* Debug */,
+				152741C62092DFEC000FBA58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		152741C72092DFEC000FBA58 /* Build configuration list for PBXNativeTarget "VenuesExplorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				152741C82092DFEC000FBA58 /* Debug */,
+				152741C92092DFEC000FBA58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 152741AD2092DFEC000FBA58 /* Project object */;
+}
